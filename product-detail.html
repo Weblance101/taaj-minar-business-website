@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Details | Mosque Products &amp; Islamic Architectural Solutions | TAJ MINAR &amp; TAJ SALES</title>
+    <meta name="description" content="Explore detailed specifications, features, images and enquiry options for mosque products including minars, Gumbad domes, marble work, flooring, carpets and Islamic architectural products from TAJ MINAR &amp; TAJ SALES.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="TAJ MINAR &amp; TAJ SALES">
+    <meta name="theme-color" content="#0b4d3b">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mosque Products &amp; Islamic Architectural Solutions | TAJ MINAR &amp; TAJ SALES">
+    <meta property="og:description" content="View product specifications, features, images and enquiry options for mosque construction products and Islamic architectural solutions from TAJ MINAR &amp; TAJ SALES.">
+    <meta property="og:site_name" content="TAJ MINAR &amp; TAJ SALES">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+
+</head>
+
+<body>
+
+    <!-- TOP HEADER -->
+    <div class="top-header py-2 d-none d-md-block">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center gap-4">
+                <span>Phone: <a href="tel:+91 9800183455" class="site-phone-val">+91 9800183455</a></span>
+                <span>Email: <a href="mailto:tajsales.co@gmail.com" class="site-email-val">tajsales.co@gmail.com</a></span>
+            </div>
+            <div><span class="top-header-badge">Product Information</span></div>
+        </div>
+    </div>
+
+    <!-- MAIN NAV -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-taj">
+        <div class="container">
+            <a class="navbar-brand brand-logo-container" href="index.html">
+                <div class="brand-logo-icon">TM</div>
+                <div>
+                    <h1 class="brand-title">TAJ MINAR &amp; TAJ SALES</h1>
+                    <p class="brand-tagline">Complete Mosque Solutions</p>
+                </div>
+            </a>
+
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link nav-link-taj" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-taj" href="about.html">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-taj" href="services.html">SERVICES</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-taj active" href="products.html">PRODUCTS</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-taj" href="gallery.html">GALLERY</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-taj" href="contact.html">CONTACT</a></li>
+                </ul>
+
+                <div class="ms-lg-3 mt-3 mt-lg-0">
+                    <a href="#" class="btn btn-general-whatsapp btn-whatsapp btn-sm">WhatsApp Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BREADCRUMBS BAR -->
+    <section class="bg-light py-3 border-bottom">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0" id="productBreadcrumb">
+                    <!-- Product breadcrumb populated dynamically by js/product-detail.js -->
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- PRODUCT DETAIL CONTENT -->
+    <section class="section-padding bg-ivory">
+        <div class="container" id="productDetailContent">
+            <!-- Product name, specifications, features, images and enquiry information are populated dynamically by js/product-detail.js -->
+            <div class="text-center py-5">
+                <div class="spinner-border text-warning" role="status"></div>
+                <p class="mt-2 text-muted">Loading product specifications, features and enquiry information...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- RELATED PRODUCTS SECTION -->
+    <section class="section-padding bg-cream border-top">
+        <div class="container text-center">
+            <span class="text-gold fw-bold text-uppercase tracking-wider">RELATED MOSQUE PRODUCTS</span>
+            <h2 class="font-heading text-green display-6 fw-bold mt-2 mb-2">Related Mosque &amp; Islamic Architectural Products</h2>
+            <div class="gold-divider"></div>
+            <div class="row mt-4 text-start" id="relatedProductsGrid">
+                <!-- Related products populated dynamically by js/product-detail.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-taj">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 TAJ MINAR &amp; TAJ SALES. All Rights Reserved. Mosque Products &amp; Islamic Architectural Solutions Across India.</p>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX MODAL -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-img-wrap">
+            <img id="lightboxImg" src="" alt="Enlarged mosque product image">
+        </div>
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/product-detail.js"></script>
+
+</body>
+
+</html>
