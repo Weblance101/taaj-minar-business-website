@@ -12,6 +12,13 @@
     <meta property="og:title" content="Mosque Construction, Minars & Gumbad | TAJ MINAR & TAJ SALES">
     <meta property="og:description" content="Complete mosque construction, renovation, RCC minars, Gumbad installation, marble Mihrab work, flooring, carpets and Islamic architectural products across India.">
     <meta property="og:site_name" content="TAJ MINAR & TAJ SALES">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +31,196 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/components.css">
+
+    <style>
+        .container-fluid{
+            width: 100%;
+            height:200px;
+            max-height: 300px;
+        }
+        img{
+            width: 100%;
+            height:45rem;
+        }
+        .carousel-item{
+            width: 100%;
+            position:relative;
+        }
+        .hero-content{
+            width: 100%;
+            max-width: 900px;
+            position: absolute;
+            top: 8rem;
+            left: 10rem;
+            animation: contentload 0.8s ease-out forwards;
+        }
+
+        @keyframes contentload{
+            from{
+                opacity: 0;
+                scale: 1.1;
+                transform: translateY(50px);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .subtitle{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: #064e3b;
+            letter-spacing: 4px;
+            margin-bottom: 15px;
+        }
+        .subtitle span{
+            width: 50px;
+            height: 2px;
+            background-color: #c49a36;
+        }
+        .hero-content h1{
+            font-size: 50px;
+            font-weight: bold;
+            line-height: 1.08;
+            color: #064e3b;
+            margin-bottom: 22px;
+        }
+        .hero-content h1 span{
+            display: block;
+            color: #a87512;
+        }
+        .discription{
+            max-width: 600px;
+            color: #064e3b;
+            line-height: 1.08;
+            font-size: 17px;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            max-width: 650px;
+            margin-bottom: 30px;
+        }
+
+        .service {
+            text-align: center;
+            padding: 0 12px;
+            position: relative;
+        }
+
+        .service:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 25%;
+            height: 55px;
+            width: 1px;
+            background: #c49a36;
+        }
+
+        .service-icon {
+            width: 78px;
+            height: 78px;
+            border: 2px solid #c49a36;
+            border-radius: 50%;
+            background: #064e3b;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 12px;
+            font-size: 29px;
+            transition: 0.3s ease;
+        }
+
+        .service:hover .service-icon {
+            transform: translateY(-5px);
+            background: #a87512;
+        }
+
+        .service h3 {
+            font-size: 14px;
+            line-height: 1.5;
+            font-weight: 500;
+            color: #064e3b;
+        }
+        .hero-btn {
+                display: inline-flex;
+                align-items: center;
+                gap: 14px;
+                background: #064e3b;
+                color: white;
+                text-decoration: none;
+                padding: 15px 28px;
+                border-radius: 40px;
+                font-size: 15px;
+                font-weight: 500;
+                transition: 0.3s ease;
+            }
+
+            .hero-btn:hover {
+                background: #a87512;
+                transform: translateY(-2px);
+            }
+
+        /* Responsive design for mobile */
+            @media (max-width: 768px) {
+                .hero {
+                    min-height: auto;
+                    padding: 55px 6%;
+                    background-position: 65% center;
+                }
+
+                .hero-content {
+                    max-width: 100%;
+                }
+
+                .subtitle {
+                    font-size: 10px;
+                    letter-spacing: 2px;
+                    gap: 7px;
+                }
+
+                .subtitle span {
+                    width: 22px;
+                }
+
+                h1 {
+                    font-size: clamp(32px, 7vw, 48px);
+                }
+
+                .description {
+                    font-size: 14px;
+                    line-height: 1.7;
+                }
+
+                .services {
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                    row-gap: 25px;
+                }
+
+                .service:nth-child(2)::after {
+                    display: none;
+                }
+
+                .service-icon {
+                    width: 65px;
+                    height: 65px;
+                    font-size: 24px;
+                }
+
+                .service h3 {
+                    font-size: 13px;
+                }
+
+                .hero-btn {
+                    font-size: 13px;
+                    padding: 13px 20px;
+                }
+            }
+    </style>
 </head>
 <body>
 
@@ -78,21 +275,244 @@
     </nav>
 
     <!-- HERO SECTION — Local Mosque Photo Background -->
-    <section class="hero-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 text-white hero-content-box">
-                    <span class="hero-subtitle">TAJ MINAR </span>
-                    <h1 class="hero-title">Complete Mosque &amp; Architectural Solutions</h1>
-                    <p class="hero-text">Complete mosque construction and renovation solutions, including RCC minars, Gumbad installation, marble Mihrab work, mosque flooring, carpets, and Madarsa essentials — all under one roof, with service available across India.</p>
-                    <div class="d-flex flex-wrap gap-3 pt-2">
-                        <a href="products.html" class="btn btn-taj-gold">Explore Products Catalog</a>
-                        <a href="services.html" class="btn btn-taj-outline-gold">Our Services</a>
+        <div class="carousel carousel-fade" data-bs-ride="carousel" id="banner">
+
+            <div class="carousel-indicators">
+                <button data-bs-slide-to="0" data-bs-target="#banner" class="active"></button>
+                <button data-bs-slide-to="1" data-bs-target="#bannear"></button>
+                <button data-bs-slide-to="2" data-bs-target="#banner"></button>
+                <button data-bs-slide-to="3" data-bs-target="#banner"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="./assets/carousel_Img/img1_converted.webp" class="w-100 d-block">
+                    
+                    <div class="hero-content">
+                        <div class="subtitle">
+                            <span></span>
+                            BUILDING SPIRITUAL SPACES
+                            <span></span>
+                        </div>
+
+                        <h1>
+                            Complete Mosque
+                            <span>Construction Solutions</span>
+                        </h1>
+
+                        <p class="discription">
+                            We specialize in Gumbad (Dome), Minar (Tower), Mehrab
+                            (Prayer Niche) construction and all mosque accessories
+                            with quality, precision and traditional Islamic craftsmanship.
+                        </p>
+
+                        <div class="services">
+                            <div class="service">
+                                <div class="service-icon">
+                                <i class="fa-solid fa-mosque"></i>
+                                </div>
+                                <h3>Gumbad<br>Construction</h3>
+                            </div>
+
+                            <div class="service">
+                                <div class="service-icon">
+                                <i class="fa-solid fa-tower-observation"></i>
+                                </div>
+                                <h3>Minar<br>Construction</h3>
+                            </div>
+
+                            <div class="service">
+                                <div class="service-icon">
+                                <i class="fa-solid fa-archway"></i>
+                                </div>
+                                <h3>Mehrab<br>Construction</h3>
+                            </div>
+
+                            <div class="service">
+                                <div class="service-icon">
+                                <i class="fa-solid fa-kaaba"></i>
+                                </div>
+                                <h3>All Mosque<br>Accessories</h3>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="hero-btn">
+                            Build Your Mosque With Us
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="./assets/carousel_Img/img2_converted.webp" class="w-100 d-block">
+                    
+                    <div class="hero-content">
+                        <div class="subtitle">
+                            <span></span>
+                            BUILDING SPIRITUAL SPACES
+                            <span></span>
+                        </div>
+
+                        <h1>
+                            Complete Mosque
+                            <span>Construction Solutions</span>
+                        </h1>
+
+                        <p class="discription">
+                            We specialize in Gumbad (Dome), Minar (Tower), Mehrab
+                            (Prayer Niche) construction and all mosque accessories
+                            with quality, precision and traditional Islamic craftsmanship.
+                        </p>
+
+                        <div class="services">
+                            <div class="service">
+                                <div class="service-icon">
+                                <i class="fa-solid fa-mosque"></i>
+                                </div>
+                                <h3>Gumbad<br>Construction</h3>
+                            </div>
+
+                            <div class="service">
+                                <div class="service-icon">
+                                <i class="fa-solid fa-tower-observation"></i>
+                                </div>
+                                <h3>Minar<br>Construction</h3>
+                            </div>
+
+                            <div class="service">
+                                <div class="service-icon">
+                                <i class="fa-solid fa-archway"></i>
+                                </div>
+                                <h3>Mehrab<br>Construction</h3>
+                            </div>
+
+                            <div class="service">
+                                <div class="service-icon">
+                                <i class="fa-solid fa-kaaba"></i>
+                                </div>
+                                <h3>All Mosque<br>Accessories</h3>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="hero-btn">
+                            Build Your Mosque With Us
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="./assets/carousel_Img/img3_converted.webp" class="w-100 d-block">
+                    
+                    <div class="hero-content">
+                        <div class="subtitle">
+                            <span></span>
+                            PREMIUM MOSQUE ACCESSORIES
+                            <span></span>
+                        </div>
+
+                        <h1>
+                            High Quality Mosque
+                            <span>Accessories & Finishing</span>
+                        </h1>
+
+                        <p class="discription">
+                            We provide a wide range of mosque accessories including marble stairs, flooring, tiles, borders, design panels and more. Enhance the beauty and elegance of your mosque with premium quality materials and islamic designs.
+                        </p>
+
+                        <div class="services">
+                            <div class="service">
+                                <div class="service-icon">
+                                <i class="fa-solid fa-stairs"></i>
+                                </div>
+                                <h3>Marble<br>Stairs</h3>
+                            </div>
+
+                            <div class="service">
+                                <div class="service-icon">
+                                <i class="bi bi-x-diamond-fill"></i>
+                                </div>
+                                <h3>Flooring<br>Tiles</h3>
+                            </div>
+
+                            <div class="service">
+                                <div class="service-icon">
+                                <i class="fa-solid fa-spa"></i>
+                                </div>
+                                <h3>Borders &<br>Design Panels</h3>
+                            </div>
+
+                            <div class="service">
+                                <div class="service-icon">
+                                <i class="fa-solid fa-mosque"></i>
+                                </div>
+                                <h3>All Mosque<br>Accessories</h3>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="hero-btn">
+                            Explore Our Accessories
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="./assets/carousel_Img/img4_converted.webp" class="w-100 d-block">
+                    
+                    <div class="hero-content">
+                        <div class="subtitle">
+                            <span></span>
+                            PREMIUM MOSQUE ACCESSORIES
+                            <span></span>
+                        </div>
+
+                        <h1>
+                            High Quality Mosque
+                            <span>Accessories & Finishing</span>
+                        </h1>
+
+                        <p class="discription">
+                            We provide a wide range of mosque accessories including marble stairs, flooring, tiles, borders, design panels and more. Enhance the beauty and elegance of your mosque with premium quality materials and islamic designs.
+                        </p>
+
+                        <div class="services">
+                            <div class="service">
+                                <div class="service-icon">
+                                <i class="fa-solid fa-stairs"></i>
+                                </div>
+                                <h3>Marble<br>Stairs</h3>
+                            </div>
+
+                            <div class="service">
+                                <div class="service-icon">
+                                <i class="bi bi-x-diamond-fill"></i>
+                                </div>
+                                <h3>Flooring<br>Tiles</h3>
+                            </div>
+
+                            <div class="service">
+                                <div class="service-icon">
+                                <i class="fa-solid fa-spa"></i>
+                                </div>
+                                <h3>Borders &<br>Design Panels</h3>
+                            </div>
+
+                            <div class="service">
+                                <div class="service-icon">
+                                <i class="fa-solid fa-mosque"></i>
+                                </div>
+                                <h3>All Mosque<br>Accessories</h3>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="hero-btn">
+                            Explore Our Accessories
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
+
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#banner"><span class="carousel-control-prev-icon"></span></button>
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#banner"><span class="carousel-control-next-icon"></span></button>
+           
         </div>
-    </section>
 
     <!-- TRUST / QUICK STATS -->
     <section class="stats-section">
@@ -343,3 +763,21 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
+
+
+<!-- <section class="hero-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 text-white hero-content-box">
+                    <span class="hero-subtitle">TAJ MINAR </span>
+                    <h1 class="hero-title">Complete Mosque &amp; Architectural Solutions</h1>
+                    <p class="hero-text">Complete mosque construction and renovation solutions, including RCC minars, Gumbad installation, marble Mihrab work, mosque flooring, carpets, and Madarsa essentials — all under one roof, with service available across India.</p>
+                    <div class="d-flex flex-wrap gap-3 pt-2">
+                        <a href="products.html" class="btn btn-taj-gold">Explore Products Catalog</a>
+                        <a href="services.html" class="btn btn-taj-outline-gold">Our Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
