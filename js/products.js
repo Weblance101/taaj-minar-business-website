@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="product-list-details">
                     <div class="product-list-badges">
                         <span class="product-list-badge">${p.category}</span>
-                        <span class="product-list-badge">${p.subcategory}</span>
+                        // <span class="product-list-badge">${p.subcategory}</span>
                     </div>
 
                     <h3 class="product-list-title">${p.name}</h3>
