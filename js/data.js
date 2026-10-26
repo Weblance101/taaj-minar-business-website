@@ -1076,7 +1076,7 @@ const GALLERY_DATA = [
         title: "Mimber",
         category: "MIMBER",
         image: IMAGES.mimber[0],
-        description: "Mosque Mimber design."
+        description: "Mosque Mimber design." 
     },
 
     {
