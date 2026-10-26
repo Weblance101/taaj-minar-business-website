@@ -52,7 +52,7 @@ const IMAGES = {
         "assets/minars/minar3.webp",
         "assets/minars/minar4.webp",
         "assets/minars/minar5.webp",
-        "assets/minars/minar6.jpg",
+        "assets/minars/minar6.webp",
         "assets/minars/minar7.webp",
         "assets/minars/minar8.webp",
         "assets/minars/minar9.webp",
@@ -63,7 +63,11 @@ const IMAGES = {
         "assets/minars/minar14.webp",
         "assets/minars/minar15.webp",
         "assets/minars/minar16.webp",
-        "assets/minars/minar17.webp"
+        "assets/minars/minar17.webp",
+        "assets/minars/minar18.webp",
+        "assets/minars/minar19.webp",
+        "assets/minars/minar20.webp",
+        "assets/minars/minar21.webp"
     ],
 
 
@@ -88,14 +92,7 @@ const IMAGES = {
         "assets/gumbad/gumbad14.webp",
         "assets/gumbad/gumbad15.webp",
         "assets/gumbad/gumbad16.webp",
-        "assets/gumbad/gumbad17.webp",
-        "assets/gumbad/gumbad18.webp",
-        "assets/gumbad/gumbad19.webp",
-        "assets/gumbad/gumbad20.webp",
-        "assets/gumbad/gumbad21.webp",
-        "assets/gumbad/gumbad22.webp",
-        "assets/gumbad/gumbad23.webp",
-        "assets/gumbad/gumbad24.webp"
+        "assets/gumbad/gumbad17.webp"
     ],
 
 
